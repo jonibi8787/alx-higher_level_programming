@@ -1,10 +1,6 @@
 #!/usr/bin/python3
-
-
-nc = 0
-for n in range(122, 96, -1):
-    if n % 2 == 0:
-        nc = n
+for c in range(ord('z'), ord('a') - 1, - 1):
+    if c % 2 != 0:
+        print("{:c}".format(c - 32), end='')
     else:
-        nc = n - 32
-    print("{}".format(chr(nc)), end='')
+        print("{:c}".format(c), end='')

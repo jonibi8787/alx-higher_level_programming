@@ -1,11 +1,12 @@
 #!/usr/bin/python3
+# 4-hidden_discovery.py
+# Yovo Koffi Vianney
 
 if __name__ == "__main__":
-    import sys
+    """Print all names defined by hidden_4 module."""
+    import hidden_4
 
-    n = len(sys.argv)
-    res = 0
-
-    for i in range(1, n):
-        res = res + int(sys.argv[i])
-    print(f"{res:d}")
+    names = dir(hidden_4)
+    for name in names:
+        if name[:2] != "__":
+            print(name)

@@ -14,4 +14,4 @@ def print_square(size):
 
     for row in range(size):
         for col in range(size):
-            print("#", end='\n' if col == size - 1 else "") 
+            print("#", end='\n' if col == size - 1 else "")
